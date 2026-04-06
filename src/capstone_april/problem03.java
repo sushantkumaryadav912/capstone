@@ -1,4 +1,6 @@
 package capstone_april;
+//Home assignment:
+//
 // Employee management system(Diamond Structure)
 // this is the classis structure A-->B, C--D structure
 
@@ -10,15 +12,16 @@ package capstone_april;
 //Both B and C inherit from A
 
 
+
+
 interface Employee {
-    default void notifyEmployee() {
-        System.out.println("Notifying employee...");
-    }
+    void notifyEmployee();
 }
 
-interface EmailNotification extends Employee {
-    default void sendEmail() {
-        System.out.println("Sending email notification...");
+interface EmailNotification{
+    default notifyEmployee()
+    {
+
     }
 }
 
